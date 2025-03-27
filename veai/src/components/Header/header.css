@@ -1,0 +1,13 @@
+.sidebar{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    bottom: 1.5rem;
+    align-items: center;
+}
+.itens {
+align-items: center;
+}

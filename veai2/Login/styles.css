@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+body{
+    background-color: rgba(87, 135, 245, 1);
+    font-family: 'League spartan', sans-serif;
+}
+.modulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bloco {
+    padding: 5px;
+    border: 1px solid #ccc; /* Apenas para visualização */
+    box-sizing: border-box; /* Inclui o padding dentro da largura e altura */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(239, 242, 249, 1);
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco input{
+    border: none;
+    margin-top: 6px;
+    background-color: rgba(217, 217, 217, 1)
+}
+.bloco input::placeholder {
+    color: white; /* Define a cor do placeholder */
+    font-size: large;
+    font-family: 'League spartan', sans-serif;
+  }
+.bloco button {
+    height: 40px;
+    width: 250px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgba(87, 135, 245, 1);
+    border: 0px;
+    color: white;
+    font-family: 'League spartan', sans-serif;
+}
+.bloco_1{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 40px;
+    width: 260px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+.bloco_1 img{
+    margin-left: 10px;
+}
+.bloco_2{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 40px;
+    width: 260px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.voltar{
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    border-radius: 50px;
+    align-items: center;
+}
+/*@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+      background-color: lightgreen;
+    }
+  }*\

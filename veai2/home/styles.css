@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(239, 242, 249, 1);
+}
+.bloco_pesquisa{
+    background-color: aqua;
+    display: flex;
+    gap: 5px;
+    justify-content: center; 
+    align-items: center;
+}
+.modulo {
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 10px; /* Borda côncava */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    height: 300px;
+    width: 300px;
+}
+
+.imagem-principal {
+    display: block; /* Garante que a imagem se comporte como bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+}
+
+.modulo-down {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 10px; /* Espaçamento entre a primeira imagem e o conteúdo abaixo */
+}
+
+.imagem-usuario {
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 0 auto 10px auto; /* Centraliza a imagem e adiciona espaço abaixo */
+    max-width: 50px; /* Define o tamanho máximo da imagem do usuário */
+}
+
+.valor-produto {
+    font-weight: bold; /* Destaque para o valor do produto */
+    display: block; /* Garante que o valor do produto esteja em uma linha separada */
+    text-align: center; /* Centraliza o valor do produto */
+}
+
+.descricao-produto {
+    margin-top: 5px; /* Espaçamento acima da descrição */
+}
+
+.data-hora {
+    margin-top: 10px; /* Espaçamento acima da data e hora */
+    font-size: 0.9em; /* Reduz o tamanho da fonte */
+    color: #666; /* Cor mais clara para diferenciar */
+}
