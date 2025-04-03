@@ -19,7 +19,10 @@ body{
     
 }
 .modulo_1{
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente (se necessário) */
 }
 .bloco {
     padding: 5px;
@@ -40,7 +43,8 @@ body{
     border: none;
     margin-top: 6px;
     outline: none;
-    background-color: rgba(217, 217, 217, 1)
+    background-color: rgba(217, 217, 217, 1);
+    width: 77%;
 }
 .bloco input::placeholder {
     color: white; /* Define a cor do placeholder */
@@ -49,7 +53,7 @@ body{
   }
 .bloco button {
     height: 40px;
-    width: 250px;    
+    width: 90%;    
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 30px;
@@ -63,7 +67,7 @@ body{
     border-radius: 30px;
     margin-top: 10px;
     height: 40px;
-    width: 260px;
+    width: 90%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -71,13 +75,14 @@ body{
 }
 .bloco_1 img{
     margin-left: 10px;
+    margin-top: -4px;
 }
 .bloco_2{
     background-color: rgba(217, 217, 217, 1);
     border-radius: 30px;
     margin-top: 10px;
     height: 40px;
-    width: 260px;
+    width: 90%;
     border: 0px;
     display: flex;
     justify-content: left;
@@ -85,23 +90,37 @@ body{
 }
 .bloco_2 img{
     margin-left: 10px;
+    margin-top: -4px;
 }
-.voltar{
+.img_voltar {
     position: absolute;
     top: 20px; /* Distância do topo */
     left: 20px; /* Distância da esquerda */
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white; /* Fundo branco do círculo */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    padding: 10px 10px; /* Ajusta o tamanho do botão */
-    text-decoration: none; /* Remove o sublinhado caso seja um link */
+    border-radius: 50%; /* Transforma em círculo */
+    width: 50px; /* Define largura */
+    height: 50px; /* Define altura (igual à largura para ser um círculo) */
+    text-decoration: none; /* Remove sublinhado se for um link */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
 }
+
+.voltar {
+    width: 60%; /* Ajusta tamanho da imagem */
+    height: auto; /* Mantém proporção */
+}
+
 .texto_login{
     color: white;
-    width: 250px;
+    width: 60%; /* Ajuste conforme necessário */
+    margin: auto; /* Centraliza o bloco */
+    text-align: center; /* Justifica o texto */
     
+}
+.simbolo_login{
+    margin-bottom: 10px;
 }
 @media (max-width: 400px) {
     .modulo {
@@ -117,20 +136,58 @@ body{
         height: auto; /* Permite que a altura se ajuste */
         padding: 20px;
     }
+    .bloco input {
+        font-size: 10px; /* Ajusta o tamanho do texto */
+    }
+
+    .bloco button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .bloco_1, .bloco_2 {
+        width: 100%;
+        height: 50px; /* Botões maiores para toque */
+    }
+
+    .bloco_1 img, .bloco_2 img {
+        width: 25px; /* Ajusta tamanho do ícone */
+        margin-left: 10px;
+        margin-top: -4px;
+    }
+
+    .texto_login {
+        width: 90%;
+        font-size: 14px;
+    }
 
     .modulo_1 {
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente (se necessário) */
     }
-    .voltar{
+    .img_voltar {
         position: absolute;
-        top: 10px; /* Distância do topo */
-        left: 10px; /* Distância da esquerda */
-        background-color: rgba(255, 255, 255, 1);
+        top: 20px; /* Distância do topo */
+        left: 20px; /* Distância da esquerda */
+        background-color: white; /* Fundo branco do círculo */
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 25px;
-        padding: 5px 5px; /* Ajusta o tamanho do botão */
-        text-decoration: none; /* Remove o sublinhado caso seja um link */
+        border-radius: 50%; /* Transforma em círculo */
+        width: 50px; /* Define largura */
+        height: 50px; /* Define altura (igual à largura para ser um círculo) */
+        text-decoration: none; /* Remove sublinhado se for um link */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+    }
+    
+    .voltar  {
+        width: 60%; /* Ajusta tamanho da imagem */
+        height: auto; /* Mantém proporção */
+    }
+    .simbolo_login{
+        margin-bottom: 10px;
     }
 }
