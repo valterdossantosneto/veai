@@ -1,27 +1,26 @@
 import { useState, useContext } from 'react';
-
-import { AuthContext } from '../../contexts/Auth';
-import './singup.css';
+import './singin.css';
 import Camada_1 from '../../assets/Camada_1.png';
 import userimg from '../../assets/user.png';
 import chevron from '../../assets/chevron-left.png';
 import lock from '../../assets/lock.png';
 import { Link } from 'react-router-dom'; 
 
+import { AuthContext } from '../../contexts/Auth';
 
-export default function SignUp(){
+export default function Recover(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
 
-    const { signUp, loadingAuth } = useContext(AuthContext);
+    const { signIn, loadingAuth } = useContext(AuthContext)
 
-    async function handleSubmit(e){
+    async function handleSigIn(e){
         e.preventDefault();
-        if(name !== '' && email !== '' & password !== ''){
-            await signUp(email, password, name)
+        if(email !== '' & password !== ''){
+            await signIn(email, password);
         }
     }
+
     return(
         <div>
         <div className="img_voltar">
@@ -38,12 +37,8 @@ export default function SignUp(){
                     </div>
                 </div>
                 <div className="bloco">
-                    <form onSubmit={handleSubmit} >
+                    <form onSubmit={handleSigIn} >
                     <div className="bloco_1">
-                        <img src={userimg} />
-                        <input type='senha' placeholder='Nome' value={name} onChange={(e)=> setName(e.target.value)}/>
-                    </div>
-		    <div className="bloco_2">
                         <img src={userimg} />
                         <input type='text' placeholder='email' value={email} onChange={(e)=> setEmail(e.target.value)}/>
                     </div>
@@ -51,11 +46,11 @@ export default function SignUp(){
                         <img src={lock} />
                         <input type='senha' placeholder='senha' value={password} onChange={(e)=> setPassword(e.target.value)}/>
                     </div>
-                    <button type='submit'> {loadingAuth ? 'Carregando...' : 'Cadastrar'} </button>
+                    <button type='submit'> {loadingAuth ? "carregando..." : "acessar"} </button>
                     </form>
                     <div className="Grup_text">
-                        Já tem conta? <Link to="/singin" className="link" >Faça login</Link><br/>
-                        Perdeu sua senha? <Link to="/recover" className="link" >Recupere</Link>
+                        Já tem conta? <Link to="/singin" className="link" >Faça login</Link><br></br>
+                        Não tem conta? <Link to="/singup" className="link" >Crie uma conta</Link>
                     </div>
                 </div>
             </div>

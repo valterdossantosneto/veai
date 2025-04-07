@@ -43,13 +43,14 @@ export default function SignIn(){
                         <input type='text' placeholder='email' value={email} onChange={(e)=> setEmail(e.target.value)}/>
                     </div>
                     <div className="bloco_2">
-                        <img src={userimg} />
+                        <img src={lock} />
                         <input type='senha' placeholder='senha' value={password} onChange={(e)=> setPassword(e.target.value)}/>
                     </div>
                     <button type='submit'> {loadingAuth ? "carregando..." : "acessar"} </button>
                     </form>
                     <div className="Grup_text">
-                        Não tem conta? <Link to="/singup" className="link" >Crie uma conta</Link>
+                        Não tem conta? <Link to="/singup" className="link" >Crie uma conta</Link><br></br>
+                        Perdeu sua senha? <Link to="/recover" className="link" >Recupere</Link>
                     </div>
                 </div>
             </div>

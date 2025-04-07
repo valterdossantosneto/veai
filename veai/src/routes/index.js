@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom';
 
 import SingIn from '../pages/SingIn';
+import Recover from '../pages/Recover';
 import SingUp from '../pages/SingUp';
 import Home from '../pages/Home';
 import SingnUpProdcts from '../pages/SingnUpProdcts';
@@ -12,6 +13,7 @@ function RoutesApp(){
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/singin' element={<SingIn/>} />
+            <Route path='/recover' element={<Recover/>} />
             <Route path='/singup' element={<SingUp/>} />
             <Route path='/singnupprodcts' element={<Private><SingnUpProdcts/></Private>} />
             <Route path='/profile' element={<Private><Profile/></Private>} />
