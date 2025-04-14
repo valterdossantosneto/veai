@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.area{
+    background-color: rgba(237, 243, 249, 1);
+    font-family: 'League Spartan', sans-serif;
+    align-items: center;
+    height: 100vh; /* Faz o body ocupar 100% da altura da tela */
+    width: 100vw;
+    margin: 0;
+}
+.bloco_cabeçalho{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.botao_anuncio{
+    background-color: rgba(0, 120, 225, 1);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 8px;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.area_login {
+    background-color: rgba(0, 120, 225, 1);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 8px;
+    border: none;
+    width: 30px;
+    height: 15px;
+
+    display: flex;
+    align-items: center;     /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+}
+.area_login a {
+    text-decoration: none; /* remove o sublinhado */
+    color: inherit;         /* herda a cor do elemento pai */
+}
+.bloco_guias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px;
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+
+.bloco_guias input {
+ border: none;
+ font-family: 'League Spartan', sans-serif;
+ height: 20px;
+}
+.bloco_guias input::placeholder {
+    color: rgba(158, 151, 151, 1);
+    padding-left: 3px;
+  }
+.bloco_guia_texto{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    width: 500px;
+    color: rgba(0, 120, 225, 1);    
+}
+.bloco_guias_bloco2{
+    display: flex;
+    width: 100%;
+}
+.bloco_guias_bloco2_pesquisa{
+    display: flex;
+    justify-content: flex-start; /* alinha os itens no início da linha (esquerda) */
+    align-items: center; 
+    margin-left: 10%;         /* opcional: alinha verticalmente no centro */
+    width: 50%;    
+}
+.bloco_guias_bloco2_pesquisa2 {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;               /* ativa o flexbox */
+    align-items: center;         /* centraliza verticalmente */
+    padding-left: 5px;           /* opcional: espaçamento interno à esquerda */
+}
+
+.bloco_guias_bloco2_img_pesquisa {
+    height: 10px;
+    margin: 0; /* remove os margins antigos */
+}
+.bloco_guias_bloco2_botoes{
+    display: flex;
+    justify-content: flex-end; /* joga os botões pra direita */
+    align-items: center;       /* centraliza verticalmente */
+    height: 100px;             /* ou a altura que quiser */
+    width: 50%;
+}
+.bloco_guias_bloco2_botoes2{
+    display: flex;
+    justify-content: flex-end; /* joga os botões pra direita */
+    align-items: center;       /* centraliza verticalmente */
+    height: 100px;             /* ou a altura que quiser */
+    margin-right: 30%;
+}
+.bloco_guias_bloco2_botoes button{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    font-size: 12px;
+    font-family: 'Inter' ;
+}
+.bloco_guias_bloco2_anuncio{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 100px;
+    
+}
+.bloco_guias_bloco2_anuncio2{
+    background-color: rgba(221, 221, 221, 1);
+    height: 80px;
+    width: 50%;
+    display: flex;               /* ativa o flexbox */
+    justify-content: center;     /* centraliza horizontalmente */
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+}
+.bloco_guias_bloco2_anuncio3 {
+    background-color: rgba(221, 221, 221, 1);
+    height: 80px;
+    width: 50%;
+    display: flex;               /* ativa o flexbox */
+    justify-content: center;     /* centraliza horizontalmente */
+    align-items: center;         /* centraliza verticalmente */
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+    text-align: center;          /* garante centralização se o texto tiver várias linhas */
+}
+
+/*@media (max-width: 400px) { } */
+        
